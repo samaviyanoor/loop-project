@@ -1,0 +1,98 @@
+<html>
+
+<head>
+
+<title>
+
+    loop project
+
+</title>
+
+</head>
+
+
+<body>
+
+    <h1 style="
+     text-transform: capitalize; margin: auto; 
+     text-align: center; background-color: rgb(159, 214, 214);
+     border: 1px solid black; width: 300px; font-size: xxx-large;  "
+     id="numb">  
+       loop and current date </h1> <br>
+
+
+        <h3 id="demo"> </h3>
+
+<script>
+
+var numbers=["1", "2", "3", "4", "5"];
+
+
+for (i=0; i<5; i++){
+
+var text = numbers[i] + "<br>";
+document.write(text);
+document.write("<br>");
+
+} 
+
+var day; 
+    switch (new Date().getDay()) {
+    
+    
+    case 0:
+    
+       day="sunday"; 
+    break;
+    
+    
+    case 1:
+    
+       day="monday"; 
+    break;
+    
+    
+    
+    case 2:
+    
+       day="tuesday"; 
+    break;
+    
+    case 3:
+    
+       day="wednesday"; 
+    break;
+
+
+    case 4:
+    
+    day="thursday"; 
+ break;
+
+
+ case 5:
+    
+    day="friday"; 
+ break;
+
+
+
+ case 6:
+    
+    day="saturday"; 
+ break;
+ 
+
+
+    }
+    
+    document.getElementById("demo").innerHTML= "today is " + day;
+
+
+ 
+
+
+
+</script>
+</body>
+</html>
